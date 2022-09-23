@@ -4,7 +4,7 @@ fetch("https://jsonplaceholder.typicode.com/todos")
     const people = json;
     console.log(people);
 
-     const completed = people.filter((todo, index) => {
+     const completed = people.map((todo, index) => {
         console.log(`${index} - ${todo.completed}`);
         return todo.completed === true;
      });
